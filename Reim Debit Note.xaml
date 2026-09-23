@@ -1,0 +1,515 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Excel.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.WorkflowEvents.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="672,7374" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="558,7351" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="DOC_TYPE" />
+        <Variable x:TypeArguments="x:TimeSpan" Name="delay_big" />
+        <Variable x:TypeArguments="x:TimeSpan" Name="delay_small">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:TimeSpan" Value="00:00:05" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="sd2:DataTable" Name="csvdata" />
+        <Variable x:TypeArguments="x:String" Name="DOC_ID" />
+        <Variable x:TypeArguments="sd2:DataTable" Name="TempDataTable" />
+        <Variable x:TypeArguments="x:TimeSpan" Name="delay_s">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:TimeSpan" Value="00:00:04" />
+          </Variable.Default>
+        </Variable>
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome Login URL" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,6777" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" IsIncognito="False" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,6573" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Delay Duration="[delay_small]" sap:VirtualizedContainerService.HintSize="488,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <uix:NSetText DisplayName="Set Text 'Username'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,195" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Text="RPA_REIM" Version="V5">
+                <uix:NSetText.Target>
+                  <uix:TargetAnchorable BrowserURL="smlprd-sso-1.cpwi.in/oam/server/obrareq.cgi" ContentHash="R9fnc43EeU2bwXXwzfEYag" DesignTimeRectangle="1542, 559, 250, 28" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='username' type='text' tag='INPUT' class='textinput' aaname='Username:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e11637ae-e135-471d-9a5d-2df123257929" InformativeScreenshot="75f6eabb707c7e30c783f704bb9fc3c5.jpg" IsResponsive="True" Reference="HUEOhRpiaUGv-JYjH7I5iQ/XlHWtyDHKUylgs8d6LqAsA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Oracle Access Management 12c' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1353, 561, 182, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Username:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Username:' /&gt;" Guid="a68ce95f-beeb-47ab-89be-16eb1305c5ca" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSetText.Target>
+              </uix:NSetText>
+              <uix:NSetText DisplayName="Set Text 'Password'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,195" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Text="PpF1q#word" Version="V5">
+                <uix:NSetText.Target>
+                  <uix:TargetAnchorable BrowserURL="smlprd-sso-1.cpwi.in/oam/server/obrareq.cgi" ContentHash="ei3KJk6gQ0mYmOygzs76qg" DesignTimeRectangle="1542, 605, 250, 28" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='password' type='password' tag='INPUT' class='textinput' aaname='Password:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9d6797a6-2c48-4bd7-b8fd-bef092a115ac" InformativeScreenshot="4351500acccc8cf1bfe4d2eaf9ddc6ef.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/gJGQV1fUwkunH1K6mDZ0Lg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Oracle Access Management 12c' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1353, 607, 182, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Password:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Password:' /&gt;" Guid="76095bdc-1155-43ff-bd0b-63e637afd9ec" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSetText.Target>
+              </uix:NSetText>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login button'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="smluat-sso-1.cpwi.in/oam/server/obrareq.cgi" ContentHash="07hZnfU9MUi9IePvuGuuwg" DesignTimeRectangle="1267, 375, 37, 15" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" Guid="dd2b32f6-ea35-4ce8-8969-7db28f207f5b" InformativeScreenshot="72f67f5f5e9695e9e299aa5b14d1a212.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/foqGUEBDWUqcyaW0G4mt2A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Oracle Access Management 12c' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <Delay Duration="[delay_small]" sap:VirtualizedContainerService.HintSize="488,123" sap2010:WorkflowViewState.IdRef="Delay_2" />
+              <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[csvdata]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" FilePath="C:/RPA_DATA/REIM_Debit_Notes_Data/Debit_Doc.csv" sap:VirtualizedContainerService.HintSize="488,170" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ReadCsvFile>
+              <ui:BuildDataTable DataTable="[TempDataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="488,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;DOC_ID&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;FILE_NAME&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[csvdata]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="488,4718" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd2:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="row" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,4536" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[DOC_ID]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(row("DOC_ID").ToString(), "^[A-Za-z]+|[A-Za-z]+$", "")]</InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                      <If Condition="[row(&quot;doc_type&quot;).ToString().Substring(0,3) = &quot;CNC&quot;]" sap:VirtualizedContainerService.HintSize="452,591" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_3">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[DOC_TYPE]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">["Credit Note Request - Cost"]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_4">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[DOC_TYPE]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">["Credit Note Request - Quantity"]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Document Maintenance'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="smluat-sso-1.cpwi.in/reim/invoiceAdvSearchDone.do" ContentHash="fymuCq9bqEGWyb_PSlkGZw" DesignTimeRectangle="372, 143, 281, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='2' tableRow='2' tag='TABLE' /&gt;&lt;webctrl id='t3' tableRow='1' tag='TD' /&gt;" Guid="e45a4dc5-5f25-4bc7-b400-1289a341174a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAR0AAAAdCAYAAACXHbjPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANFSURBVHhe7Zo9khoxEEY5DLETX4TEHGEvQMABSF2cgAPAFUhJN99sD+DEkWO5NDMtuj+pJTBGVct8wQv0M1p1z/QbDfbi1+8/gRBCerHADkIIeSaLbz9+hsji+xshhDyN5BotHTQSIYT8DygdQkhXKB1CSFcoHUJIVygdQkhXKB1CSFcoHUJIVyidGh+nsCz8H4PF5pLPnQvnvZOHS1ilHO3DEa8rcNzEuduw+8jHyOtC6dQQ6ejikr71Kbzj/Bfh/bANq3PeP6Clo3Og+58mnUtYvXDe5wKlU6MknakoY47cwvzCNGMzcrkKY7xuG5br26VzH9NJitL58lA6NRzpSP/y8Jn6pFgFLFp/HIvpM+x04U5Fvjyc1OfLNuzO+tMPihw+C/VeklQOao78bSOUQtx6P5v9cP249rTn9T6sQDoYt86ZPelc87Ab+vXeJScq/kl24xoQB+Q1X8/GUoq3micnNrN25R7MnZgPSsejIR3pz04HSRRjgeG4V2w16eRigHHZY3FveCLB8evesJ2BEhzWGWNYHi7FvZfjxrb8JuTlBdvO9eleNdaDFwfGfW+ezF4a92DuxLxROh43SUfe8votqPtAIhlYTI50HKlgG4uhVVwtQWao+WOh7cMxyaUcqz0RNKTj5SEbx7as583H9Ww8gicVmydnLYjXuwdzJ+aG0vHAAof+8SHChzuiH8rSuAbHy9JJDyzuyZFOhielB6Qjb/Dr7zjlvUv7ppOOl4dsXE4yyI3rpc+fcT7GjW2bJ1zb0roHcyfmgtLxwAKfsA9kn5POvdLxpJGNPyCda+GWY61LBtuNPGTj2EZw3K6HcbbaD510iIHSqYEFPoAPc+EhaxSynBDGYvPewP8mHWyX/7a/V2m7BVN64zvFKD/yDmvBySKudZ90crnXr8d2WToYx615wnFzTxv3YO7EXFA6HvpNrikck+XBEvABq46nz5C49umhk05p3+naUgHg+vqzpXSKgPlGLJko7CfQamOFVpcGrmVzaNcQ9MmjtZ60pxxN/xrnSQXjxv2YuZHKPZg7MR+UDiGkG5QOIaQrlA4hpCuUDiGkK5QOIaQrlA4hpCuUDiGkK0Y6OEgIIc+E0iGEdOUvKY+h+M0w9IgAAAAASUVORK5CYII=" InformativeScreenshot="7a9cb3a5866b42baf35f2f2a656b7899.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/stAGDGeJSUmrbct8m3B0ag" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Oracle Retail Invoice Matching' /&gt;" SearchSteps="Selector, Image" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <Delay Duration="[delay_small]" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Document Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="smluat-sso-1.cpwi.in/reim/index.jsp" CVScreenId="4c054874-3761-469e-a9f8-0dfda7b75ecb" ContentHash="TiKU9mQYKUClXnRxzsxLbw" CvTextArea="47, 178, 104, 12" CvTextArgument="Document Search" CvType="Text" DesignTimeRectangle="48, 178, 102, 14" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='tabDetails' tableRow='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' /&gt;" Guid="e13d809e-0da9-4e16-bd12-4228b9c02944" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGoAAAASCAYAAACzUEs7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIMSURBVFhH7VgxjsIwEORF/IWCZ5B/RKJHfMA/gJIHUFJQUl1Fg3QStU+Jvc7ueOM4nJBiycVIJGt7Z2d2DWL1fL1txfKxwhcVy0Q1qhBUowoBM+pqm+3ergEb84g2FYmLSddyMaLu5qKs+RZ87lTO2Kj2Gh2QLLAE3M92k6zD1e7iD3vYdWYZe4rWfQn/Nur1tqcWSPui1c4biwGRmzna9fZoD3cWM2xve/V5O/h1Pofb62O7s7317724u7M9hH3EGW4KqE/wDucBxLRJAweePEZ8jG16030NU/q0Qx5sqkmjhKjQmSImuhIMzjCK8lLh7hzPiQQU53C+NAU6z+gZIQSESRJ7h4YIfOgznaHxYfqm9JEaSB6zjJLGwJ4+mez+gAyj1BgIgwX0z30MryuoZcoonNTRZqTnxFRxo/iEZugzlrPDLKNQKL5HOxyJqGakYqJgMgPR8UFh5hvF17lzec0I3riUR5lwZtTH+vg1k0Zxc+IDcKJGvhBTRFKxiYkagMJ8aJQHGdBximvOyYmxuE6BpAYOaaOwwIzvKNovYto9/4FRcm1KmHlGcWMiDhp3pXHkdCGfmFN+szrERgGi4pTrQY/J7uG/4po2l2RccBCkQ3iP67Dp2LUpxNP4xdyJo8PYL+Cj3eA1jbnG9Elq4FD/mSgEwSjeTRXLwc/zVxpVsWxUowpBNaoQ/AGwFUlbT1WqVgAAAABJRU5ErkJggg==" InformativeScreenshot="65d6b102faa40bd8ba619533bfa3a769.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/fVAf9Ny_zk6K7zYMlntYmw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Oracle Retail Invoice Matching' /&gt;" SearchSteps="Selector, Image, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <Delay Duration="[delay_s]" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                      <uix:NSelectItem DisplayName="Select Item 'View'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,195" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Edit" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V5">
+                        <uix:NSelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="4">
+                            <x:String>View</x:String>
+                            <x:String>New</x:String>
+                            <x:String>Edit</x:String>
+                            <x:String>Void Credit Note Requests</x:String>
+                          </scg:List>
+                        </uix:NSelectItem.Items>
+                        <uix:NSelectItem.Target>
+                          <uix:TargetAnchorable BrowserURL="smluat-sso-1.cpwi.in/reim/invoiceAdvSearch.do" ContentHash="d4RSE9DXzUKZADeQc03CCg" DesignTimeRectangle="632, 134, 152, 16" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='searchTable' tableRow='2' tag='TABLE' /&gt;&lt;webctrl name='actionType' tableRow='1' tag='SELECT' /&gt;" Guid="b9628d0b-2aa2-4ea5-b537-cd369e473b4d" InformativeScreenshot="7fcba97874085f245eb53fb828c3f80c.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/GxCK50CYEEWVR-FS0TUKzQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Oracle Retail Invoice Matching' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NSelectItem.Target>
+                      </uix:NSelectItem>
+                      <Delay Duration="[delay_big]" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                      <uix:NSelectItem DisplayName="Select Item 'Document Type'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,195" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[DOC_TYPE]" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V5">
+                        <uix:NSelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="10">
+                            <x:String>Merchandise Invoice</x:String>
+                            <x:String>Credit Memo - Cost</x:String>
+                            <x:String>Credit Memo - Quantity</x:String>
+                            <x:String>Credit Note</x:String>
+                            <x:String>Credit Note Request - Cost</x:String>
+                            <x:String>Credit Note Request - Quantity</x:String>
+                            <x:String>Credit Note Request - Tax</x:String>
+                            <x:String>Debit Memo - Cost</x:String>
+                            <x:String>Debit Memo - Quantity</x:String>
+                            <x:String>Debit Memo - Tax</x:String>
+                          </scg:List>
+                        </uix:NSelectItem.Items>
+                        <uix:NSelectItem.Target>
+                          <uix:TargetAnchorable BrowserURL="smluat-sso-1.cpwi.in/reim/invoiceAdvSearch.do" ContentHash="Z9onEC1AekOvVL1PUKWduw" DesignTimeRectangle="264, 154, 173, 16" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='searchTable' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' tag='SELECT' class='gList' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f9208058-f5e6-49d4-a922-405a9e2298d4" InformativeScreenshot="e40a51612820e62cf6d55a4fa31f0469.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/FOUVToanpkKvAg93yfBrdQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Oracle Retail Invoice Matching' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="147, 153, 114, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='searchTable' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='gContentSection' type='' tag='TD' aaname='Document Type' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Document Type' /&gt;" Guid="1adbc44f-381d-4381-b408-a5139a1837b0" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NSelectItem.Target>
+                      </uix:NSelectItem>
+                      <Delay Duration="[delay_s]" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                      <uix:NSetText DisplayName="Set Text 'Document ID (% for part…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,195" sap2010:WorkflowViewState.IdRef="NSetText_3" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Text="[&quot;%&quot; &amp; DOC_ID &amp; &quot;%&quot;]" Version="V5">
+                        <uix:NSetText.Target>
+                          <uix:TargetAnchorable BrowserURL="smluat-sso-1.cpwi.in/reim/invoiceAdvSearch.do" ContentHash="54T411_vCU2m4k4VRAsj9w" DesignTimeRectangle="856, 154, 239, 16" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='searchTable' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='text' tag='INPUT' class='glist' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="90d6604c-ddf7-4e7f-b448-acf4a52103c7" InformativeScreenshot="915058122142924bd138990db8a38a21.jpg" IsResponsive="True" Reference="HUEOhRpiaUGv-JYjH7I5iQ/Iw0t36McS0m1C-1bMyNVAA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Oracle Retail Invoice Matching' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="582, 153, 271, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='searchTable' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='gContentSection' isleaf='1' type='' aaname='Document ID (% for partial search)' tag='TD' matching:class='fuzzy' fuzzylevel:class='0.0' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Document ID (% for partial search)' /&gt;" Guid="d80710be-a005-4c57-a481-743bddec6e2c" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NSetText.Target>
+                      </uix:NSetText>
+                      <Delay Duration="[delay_s]" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_9" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="smluat-sso-1.cpwi.in/oam/pages/logout.jsp" ContentHash="2nxLhh3TL0C3NfW73d_aJw" DesignTimeRectangle="883, 693, 76, 28" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='gContentFill' tableRow='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' type='submit' /&gt;" Guid="9ec70690-afe6-46b5-ad13-acd7c74bf08c" InformativeScreenshot="69da059056fa095f69693770a80964e1.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/3r7cV-VUC0y8svOkzsbS4w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Oracle Retail Invoice Matching' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <Delay Duration="[delay_s]" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_12" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CNQEAG-TTI232401042'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="smluat-sso-1.cpwi.in/reim/invoiceAdvSearchDone.do" ContentHash="XQXl7xyCGESHkWr4MC2LkQ" DesignTimeRectangle="244, 171, 122, 12" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" Guid="debc7ecd-e8b3-43a2-bc55-eb0c3be0b417" InformativeScreenshot="5431a25e5203f1cfedd0b4fcd0f46744.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/dsZr-lxP2EKTDt32E3hwfA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Oracle Retail Invoice Matching' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <Delay Duration="[delay_s]" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_13" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Print Credit Note'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="smluat-sso-1.cpwi.in/reim/invoiceAdvancedSearchResultFormLinkAction.do" ContentHash="6eKG3CB-YEKNbYgRpT_gjg" DesignTimeRectangle="921, 558, 97, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='gContentSection' tableRow='2' tag='TABLE' /&gt;&lt;webctrl name='buttonPrintCreditNote' tableRow='35' tag='INPUT' /&gt;" Guid="c125cf27-9547-4c7d-b9d3-56d42acfab9e" InformativeScreenshot="8a2586f5e6814abf5a7de51e911d0998.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/ZBdVUzmN90aBsNpAOadrNQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Oracle Retail Invoice Matching' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <Delay Duration="[delay_s]" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_19" />
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Oracle Business Intelligence(3)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,229" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" ScopeGuid="a8b4c78f-c068-4665-b832-16063f7b126a" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" ScopeIdentifier="a8b4c78f-c068-4665-b832-16063f7b126a" Version="V5" />
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                            <ActivityFunc.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                            </ActivityFunc.Argument>
+                          </ActivityFunc>
+                        </uix:NApplicationCard.OCREngine>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 0, 816, 573" BrowserType="Chrome" ContentHash="AFk5A_OsOkGikpTiayXT0Q" IconBase64="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" InformativeScreenshot="023c383d92f1b878d06c54d285b87a50.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/irJ8phkIN0GJ93qRdbtKKg" Selector="&lt;html app='chrome.exe' htmlwindowname='name' title='Oracle Business Intelligence' /&gt;" Url="http://smlprd-ra-1.cpwi.in:9704/bi-security-login/login.jsp;jsessionid=R_odHsjVzU75Hw-GbT3WHbL7HwQcjZCWQ3WQVwYtypqtVtPfuG5k!-1373782537?msi=false&amp;redirect=L3htbHBzZXJ2ZXIvR3Vlc3QvUk1TMTMvRGViaXROb3RlL0RlYml0Tm90ZVJlcG9ydC54ZG8/RE9DX0lEPTExMTUyMjU5MCZoYXNoPUItUjhkSm9ELWVvcERVbGNVVk03cG9TYzViQ0pmdktCaGxfbFdzSGIxVVBCalRDNnlpU0FRT3MtUUk4Q0hZMUI=" Version="V3">
+                            <uix:TargetApp.Arguments>
+                              <InArgument x:TypeArguments="x:String" />
+                            </uix:TargetApp.Arguments>
+                            <uix:TargetApp.WorkingDirectory>
+                              <InArgument x:TypeArguments="x:String" />
+                            </uix:TargetApp.WorkingDirectory>
+                          </uix:TargetApp>
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_37" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="smluat-sso-1.cpwi.in/reim/invoiceAdvancedSearchResultFormLinkAction.do" ContentHash="cr4FUR5jB0C49kwiMUK3JQ" DesignTimeRectangle="867, 558, 50, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='gContentSection' tableRow='2' tag='TABLE' /&gt;&lt;webctrl name='buttonCancel' tableRow='35' tag='INPUT' /&gt;" Guid="f8e1f0b6-26c6-4b01-8641-2c17c1c0b1c8" InformativeScreenshot="f0f53dcb99ab9cb395fa2acaf7bc45d5.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/4bkJ0_AfsUawgNwaDEVWzg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Oracle Retail Invoice Matching' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <Delay Duration="[delay_s]" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_15" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cancel(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_38" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="smluat-sso-1.cpwi.in/reim/documentMaintenanceHeaderCancel.do" ContentHash="x4mvPCQbfUq7Xnr5XRFNSg" DesignTimeRectangle="777, 205, 51, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='2' tableRow='2' tag='TABLE' /&gt;&lt;webctrl name='cancel' tableRow='1' tag='INPUT' /&gt;" Guid="a40efbf6-c73e-48e6-8b41-930c38bc3511" InformativeScreenshot="432ebf84783013195c05ed500b1f0fe6.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/-dLpzftfqkKbw2I-_hhq0A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Oracle Retail Invoice Matching' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <Delay Duration="[delay_s]" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_16" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cancel(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_43" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="smluat-sso-1.cpwi.in/reim/invoiceAdvSearchResultCancel.do" ContentHash="loY-jKtauUKbZ-GbHYwJsA" DesignTimeRectangle="762, 468, 50, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='gContentFill' tableRow='2' tag='TABLE' /&gt;&lt;webctrl name='cancel' tableRow='1' tag='INPUT' type='submit' /&gt;" Guid="9b858ddb-f02a-47d8-9876-f1758ed0c24a" InformativeScreenshot="72be1c2b39742cf4b66e778de1ecdd6b.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/Ul5fsaq200KuGeOmf0N-og" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Oracle Retail Invoice Matching' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <Delay Duration="[delay_s]" sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="Delay_21" />
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="488,356" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log Out'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_56" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="smlprd-sso-1.cpwi.in/reim/invoiceAdvSearchDone.do" ContentHash="CUP5PNZ-jkWd-wZPBcXHtg" DesignTimeRectangle="1323, 116, 42, 12" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl aaname='Log Out' tableRow='1' tag='B' /&gt;" Guid="0da3c57a-bb1c-4426-a906-a63894028315" InformativeScreenshot="2fe439e06a37daaf736afbf052b884de.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/_FgYQqOvSkeMJcAdxy8qwQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Oracle Retail Invoice Matching' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="488,347" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cancel'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_61" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="21650c8a-4f5e-4f49-b5d6-f93cb46d3d29" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="smlprd-sso-1.cpwi.in/reim/invoiceAdvSearchDone.do" ContentHash="fnqwax1YYEupeBWOtdme4Q" DesignTimeRectangle="824, 179, 71, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='smlprd-sso-1.cpwi.in:4443 says' role='dialog' /&gt;&lt;ctrl name='Cancel' role='push button' /&gt;" Guid="e5687601-e731-4a2a-a49b-2c7b0d2f8c7c" InformativeScreenshot="969edf22c2c8d3442f05e3a1d06660ea.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/uBLKiuYAkke-n6gTECuZDw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Oracle Retail Invoice Matching - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" ContentHash="E6-oENq06UGbspS3VDimgA" IconBase64="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" InformativeScreenshot="aa96ee63c0fdb6a42527faea8b32f65d.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/Pw2ttf9aE0uzjxz4HW7Zjg" Selector="&lt;html app='chrome.exe' title='Login - Oracle Access Management 12c' /&gt;" Url="https://smlprd-sso-1.cpwi.in:4443/reim/index.jsp" Version="V3">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Single Sign-Off" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,491" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InteractionMode="DebuggerApi" ScopeGuid="235525c8-a930-4baf-a732-5c9416c1696a" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,296" sap2010:WorkflowViewState.IdRef="Sequence_20">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_3" ScopeIdentifier="235525c8-a930-4baf-a732-5c9416c1696a" Version="V5" />
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_22" />
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" ContentHash="YDhj6Y82tEK5IhOX3ky8IQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAc7SURBVFhHnZZ7bJPXGcb9TwesBQKFlhVInBs4cRx/cZI2kOBbaBKgEMp/07oRaZom7fLXpk6l3P6ZNG0aDoEQCBAHkq6jqLu10tQtsZ17WLuhoRFStM2UJM6lYKfQrpDv+H2m95zPjhNCSznST8/zntjvc94Tf7JNpkdcYbeWNuV11E15S/1T3tLLH1eWxKYqSzHpLcGUl31JcMpb7J+sLN7Lr53//sde4zWaeaKytJ5DjDCa8BRj0lOCSU8xMVw/gLvYP+7WzPP7PfJSE5f4OFQGuVVYMtBdTBNuB4272TtowlCux90OhcuBcafj0PzeX7r45BOe4rARZDR2SD8nwCDCQQzXziKKuIrUHntFeLzsEW9j0lNkH3c7wvND1ERFxKhAFWSEIOLUkjrmLMLYFk3BXtVffgienMMTEyg1MILGnKppZIsRlBq2RcNoggo7xirsNCpR9Ui5PTxeZln4EPw/j7iKwioopXkyTDWWB2Ct0EjWHGAEqiDpaUTWSkfKCxlSag8v+JSMOjVfMkRBqRMZ0xhBynNDWXNzNSFulhdKjFDc3DwfG93cZPPNCdfe3G1u+qFrNoRDywuTgXIaI2TqR9/F3bfaoUfGkFj02YegqXcgLu+EuFTMEGucddABySUHMXH++6ADGEj5PBS/uce/xV+L4coiNZVxXVI325SvLsfdC+3J0EiMEBqeQWhYx/Xx+Oxhxn8D8YEL+mARhEQjMaghfkkjMaCpekDW6hY0/+40xxsvgzn0M2/yqjiY9aNNNoxUbcb968My4O9hHd/3f4rSw9MoPWRweBq7fHcQvDZj3MgwxPsVEIN2DlQ6wJ61EGKwkMRAYQyXtTST9sbuOq19N4rad4M1tKtEhjI3N9mI9c5v22TjU8F7KDk0PcvBFG/QHLynDhFpU2EDNoOCFGWsNNObX2fS2mr9Wlst7G27SGuvpVd+UYUbZQX4qMxKzOjL1bIhT1d8MCZxGDrL9Jz9D8K6fE/86l4S/Vbo/fkQCxAfyPeb7G21Qfv5WtjP7zKoxTt7SnCjzIrwC1bcfff3stmOI5+g6EBsloMpmvBG/b2Wu8bn4Tzp/XkQc7CQ6Lcg3m+heF/eZVPhuV2xwnM7kcDWuhNbj23Dv5w2hJ/Pp/vXr2E4IqAdiC1A9CHEMBaLA/dGIfo3UJI+CRi9bwPi/blRk83/EmytEpLeqH/+g3KES/OIJwkMzcC+P7owB2Lz6igK90cRMD6Qoi8Xem8OBNOXC9FnqKyzyVTQsgMF/pdQ4N9BUluVvtC0DVcqrLJJ59B92PZHH4CDUjV1v3PIOEBvNkRfFoneLBJ92dB7syBS4APErC3bSbED1pbtMJR+/KqT9MgoxqJxFLx++ytxLSJAn16F6M2E3pMJ0Wsm0WuWtfIZXEdN+We3/yP/zDYotiP/7Hbpraxnt1FP6IKcpO7MHVhfvw3rvttKv4CqX02rp2DyIlRQOuk96RCSDIie9cRe71kfNFnO1PjzTm/DLDXyAJbTNcT+O+++Kpv97b8zyN93G3n7bht6S/rZena/Y+i+uv73N0HvXg+9ex1EzzpiNTwEa/dav8nSXFNnaa5JBjKybq4mS3M1K85dUY/i8c7PYHntFiz7bimdz75bON7xP/na6ZEW0rvXQvSsJdHzHOndzyGBSGjX2r0ms9+dlneqOrbxVDVSsbA2VxFT0rqHrn38b9n4r1fvw/vLGDa+dmsO3z79CS79R33wRqMfItqTD73rGwZrILrXUEJF97PSI5imvpY3nqyu33iyChsMpD9VRYl6w8kqKvHvodYrv5MBvIbGhDwMMxqd/TLi17T8aRNE1xroXc8mEayhZ6SKrtUkQqv9yW9DS1ONeUPTi2ByDU34FCinaSu521/B29few5BxI7xG7kzA/8+38a0//BSuM07oodWKLkNDq6QXXatI+tAqnn7uL6Pcxsr63BNbkSCnkfVFcGjOCQmUVhL/LanzuPjHXNJDT6tQqStJKIUIrSTWeNfKB38pm33utOwTleHsRtU4+3glco5XSuU9qbzXOLdO5Zutz5MIrSA9uAJ6aAWkBldAGF6E0kgE08Lzs5PL7HObsxu94UTDrGNeZB/zIuu4lyTsjXqh/Rt/eQYiuJz04DLSg8shQstJsAaXkUH4gaufv/gQWQ2esGza4EHmMQ8x7BNksh7zSpW+wYuftBVCDyyFHlymNLAUIvgUMexnAkvDCC7+4vDE4kNkHvWEM496YG5wU+ZRt1TpGzwwH1U+QUXTZtx472nogac4FHrgyTmIwJPhzx81PHWZfe7D5no3Ho4L5qMuOvNWFvTOJRCBr0v0wGLiWg8s4X1f8nl/nMW3ke5z+TN8LmTUuyj9iJPYp/ucsi5vLIPeudhgEfSORdADi2J6x5L6z//8GFM/bPFTsv7XW+rSjzhbM3yuYPoRZyz9iBMXLq6DCDwRjXd87XK8Y7F/pvOJuq8y8f8BmWZYCb9aOw0AAAAASUVORK5CYII=" InformativeScreenshot="214ee3ef6041a434c11b70d854a6e54e.jpg" Reference="HUEOhRpiaUGv-JYjH7I5iQ/dPdh1pIiVkKA60d8poO1Bw" Selector="&lt;html app='chrome.exe' title='Oracle Retail Invoice Matching' /&gt;" Url="https://smlprd-sso-1.cpwi.in:4443/reim/invoiceAdvSearchDone.do?OWASP_CSRFTOKEN=QINI-60OK-FNPM-4NW6-Y0VK-NZRN-POT1-A7XM" Version="V3">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
